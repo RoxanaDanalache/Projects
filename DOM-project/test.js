@@ -1,14 +1,23 @@
-const categories = document.querySelectorAll("#categories .item");
-console.log("Number of categories:" , categories.length);
+    const ingredients = [
+        "Potatoes",
+        "Mushrooms",
+        "Garlic",
+        "Tomatoes",
+        "Herbs",
+        "Condiments",
+    ];
+    
+    const ingredientsList = document.getElementById('ingredients');
+    ingredients.forEach(ingredient => {
+        const listItem = document.createElement('li');
+        listItem.textContent = ingredient; 
+        listItem.classList.add("item");
+        ingredientsList.appendChild(listItem); 
+      });
 
 
-categories.forEach (category => {
-    const title = category.querySelector("h2").textContent;
-    const itemsCount = category.querySelectorAll("ul li").length;
 
-    console.log("Category:" , title);
-    console.log("Elements:" , itemsCount);
-});
+
 
 
 
