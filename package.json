@@ -2,7 +2,8 @@
   "name": "projects",
   "version": "1.0.0",
   "main": "test.js",
-  "type": "module","scripts": {
+  "type": "module",
+  "scripts": {
     "start": "node test.js",
     "test": "mocha test"
   },
